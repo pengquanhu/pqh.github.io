@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人页面</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../styles/个人页面style.css">
+    <script language="JavaScript">
+        function reP() {
+            document.getElementById('oImg').style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wx">
+        <img src='../images/微信二维码.jpg' id="oImg" style='display:none' width="300px">
+    </div>
+    <!-- 微信二维码，点击出现 -->
+    <div class="profile-card">
+        <div class="card-header">
+            <div class="pic">
+                <img src="../images/pic.png" alt="" width="1000">
+            </div>
+            <div class="name">The Peng</div>
+            <div class="desc">A boy who's first name is Peng</div>
+            <div class="sm">
+                <!-- 联系方式-facebook -->
+                <a href="#" class="fab fa-facebook-f"></a>
+                <!-- 联系方式-Twitter -->
+                <a href="#" class="fab fa-twitter"></a>
+                <!-- 联系方式-qq，跳转至QQ页面 -->
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=1251329415&site=qq&menu=yes " class="fab fa-qq"
+                    target="_blank"></a>
+                <!-- 联系方式-github -->
+                <a href="https://github.com/ThePeng520" class="fab fa-github" target="_blank"></a>
+                <!-- 联系方式-微信，点击显示二维码 -->
+                <a href="#" class="fab fa-weixin" target="_self" onclick="reP()"></a>
+            </div>
+            <a href="#" class="contact-btn">Contact Me</a>
+        </div>
+        <div class="card-footer">
+            <div class="numbers">
+                <div class="item">
+                    <span>121</span>
+                    posts
+                </div>
+                <div class="border"></div>
+                <div class="item">
+                    <span>120</span>
+                    following
+                </div>
+                <div class="border"></div>
+                <div class="item">
+                    <span>120K</span>
+                    followers
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
