@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彭全虎丨我这一生爱与信仰永不做筹码</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- 网页图标 -->
+    <link rel="icon" href="./images/icon.svg">
+    <script language="JavaScript">
+        document.oncontextmenu = function () {
+            return false;
+            //禁止右键
+        }
+    </script>
+</head>
+
+<body id="top">
+    <div class="card">
+        <div class="profile-card">
+            <div class="card-header">
+                <div class="pic">
+                    <img src="./images/头像.png" alt="" width="1000">
+                </div>
+                <div class="name">彭全虎</div>
+                <div class="en_name">The Peng</div>
+                <div class="desc">我这一生爱与信仰永不做筹码</div>
+                <div class="sm">
+                    <!-- 联系方式-facebook -->
+                    <a href="https://www.facebook.com/profile.php?id=100065159618565" class="fab fa-facebook-f"
+                        target="_blank"></a>
+                    <!-- 联系方式-Twitter -->
+                    <a href="./docs/loading.html" class="fab fa-twitter" target="_blank"></a>
+                    <!-- 联系方式-微信，点击显示二维码 -->
+                    <a href="./docs/weixin.html" class="weixsin" target="_blank"><i class="fab fa-weixin"></i></a>
+                    <!-- 联系方式-qq，跳转至QQ页面 -->
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=1251329415&site=qq&menu=yes " class="fab fa-qq"
+                        target="_blank"></a>
+                    <!-- 联系方式-github -->
+                    <a href="https://github.com/ThePeng520" class="fab fa-github" target="_blank"></a>
+                </div>
+                <a href="#" class="contact-btn">Contect Me</a>
+            </div>
+            <div class="card-footer">
+                <div class="numbers">
+                    <div class="item">
+                        <a href="./docs/loading.html" class="posts-link" target="_blank">
+                            <span>1</span>
+                            文章
+                        </a>
+                    </div>
+                    <!-- 分割符号 -->
+                    <div class="border"></div>
+
+                    <div class="item">
+                        <a href="#" class="following-link">
+                            <span>0</span>
+                            关注
+                        </a>
+                    </div>
+                    <div class="border"></div>
+                    <div class="item">
+                        <a href="#" class="followers-link">
+                            <span>0</span>
+                            访客
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 下一页标签 -->
+    <a class="downIcon" href="#all"></a>
+    <div class="all" id="all">
+        <!-- 自我介绍 -->
+        <div class="introduction">
+            <h4>关于我</h4>
+            <div class="tag">
+                <span>98年</span>
+                <span>内向派</span>
+                <span>独行侠</span>
+                <span>理科生</span>
+                <span>选择困难症</span>
+            </div>
+            <div class="article">
+                <p>我是彭全虎</p>
+                <p>一名在校大学生</p>
+                <p>臆想症、随缘症晚期</p>
+                <p>在六盘水度过了最美好的最开心的童年</p>
+                <p>现就读于萍乡学院机械电子工程学院电子信息工程专业</p>
+                <p>热衷各种与本专业无关的东西：</p>
+                <p>打球、写文章、寻找美好的事物</p>
+                <p>浙江带过军训，江苏进过工厂，去过杭州、上海</p>
+                <p>白日梦想：</p>
+                <p>拥有一辆喜欢的车，带着美好心情和喜欢的人一起说走就走</p>
+                <p>请多指教!</p>
+                <object data="./images/tiger.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+        <div class="past">
+            <h4>我的过去</h4>
+            <ul>
+                <li><img src="./images/带训.jpg" alt=""></li>
+                <li><img src="./images/arrow.svg" alt="" class="arrow"></li>
+                <li><img src="./images/带训1.jpg" alt=""></li>
+                <li><img src="./images/arrow.svg" alt="" class="arrow"></li>
+                <li><img src="./images/带训完毕.jpg" alt=""></li>
+                <li><img src="./images/arrow.svg" alt="" class="arrow"></li>
+                <li><img src="./images/退队.jpg" alt=""></li>
+                <li><img src="./images/theend.svg" alt="" class="end"></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <p>爱意何必公之于众，我为你受的苦又不是想邀功。</p>
+        </div>
+        <!-- 上移至顶 -->
+        <div id="gotop"><img src="../有趣的灵魂/images/totop1.svg" alt=""></div>
+        <script>
+            window.addEventListener("scroll", handle)
+            function handle() {
+                var oTop = document.body.scrollTop || document.documentElement.scrollTop
+                if (oTop >= 400) {
+                    gotop.style.display = "block";
+                } else {
+                    gotop.style.display = "none";
+                }
+                gotop.onclick = function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    })
+                }
+            }
+        </script>
+    </div>
+
+</html>

@@ -1,0 +1,278 @@
+* {
+    /* 清除所有边距 */
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+title{
+    display: none;
+}
+body {
+    /* 背景图片 */
+    background:url(../images/背景.png)  no-repeat center center;
+    background-size:cover;
+    background-attachment:fixed;/*  页面背景不随着鼠标滚动  */
+    background-color:#CCCCCC; 
+    /* 使得名片卡居中 */
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* 禁用拖动文字 */
+    user-select: none;                        
+}
+/* 隐藏滚动条 */
+body::-webkit-scrollbar { 
+    width: 0 !important 
+}
+
+/* 名片卡模块 */
+.profile-card {
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* 上部分 */
+.card-header {
+    background: #7a6762;
+    padding: 60px 40px;
+}
+/* 头像模块 */
+.pic {
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+/* 头像 */
+.pic img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+/* 头像框特效 */
+@keyframes animated-gradient {
+    25% {
+        background-position: left bottom;
+    }
+    50% {
+        background-position: right bottom;
+    }
+    75% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right top;
+    }
+}
+/* 名字 */
+.name {
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+    font-family: '楷体';
+}
+.en_name{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+/* 个性签名 */
+.desc {
+    font-size: 18px;
+    font-family: '隶书';
+    color: #e66767;
+}
+
+/* 图标模块 */
+.sm {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+/* 链接样式 */
+.sm a {
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    transition: .3s linear;
+}
+.sm a:hover {
+    color: #e66767;
+}
+/* 联系我按钮 */
+.contact-btn {
+    display: inline-block;
+    padding: 12px 50px;
+    color: #e66767;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+}
+.contact-btn:hover {
+    background: #e66767;
+    color: #f2f2f2;
+}
+/* 卡片底部 */
+.card-footer {
+    background: #f4f4f4;
+    padding: 60px 10px;
+    
+}
+.item {
+    flex: 1;/*间隔*/
+    text-transform: uppercase; /*字母大写*/
+    font-size: 13px;
+}
+/* 数字模块 */
+.numbers {
+    display: flex;
+    align-items: center;
+}
+/* 数字 */
+.item span {
+    display: block;
+    color: #2e3a47;
+    font-size: 30px;
+}
+/* 文章、追随者 */
+.card-footer a{
+    color: #e66767;
+}
+/* 分隔符 */
+.border {
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+}
+
+.all{
+    position: absolute;  /* 设置下一页展示 */
+    top: 100%;
+    /* width: 100%; */
+}
+/* 自我介绍模块 */
+.introduction{
+    background-color: #fff;
+    padding: 90px 0 90px 0;   
+    line-height: 1.5rem;
+}
+.introduction h4,.tag,p{
+    text-align: center;
+    
+}
+.introduction h4{
+    font-weight: 400;
+    font-size: 3rem;
+    color: rgb(174, 174, 174);
+}
+.tag{
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    font-size: small;    
+}
+.tag span{
+    margin: 0 3px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    color: rgb(174, 174, 174);
+}
+.article{
+    margin-top: 35px;
+    position: relative;
+    width: 100%;
+    color: rgb(90, 89, 89);
+    font-size: 14px;
+    text-align: center;
+}
+.article p{
+    font-size: 1.5rem;
+    transition: .25s;
+    margin: 17px 0 17px 0;
+}
+/* 我的过往模块 */
+.past{
+    text-align: center;
+    padding: 90px 0 90px 0; 
+    background-color: rgb(241, 241, 241);
+}
+.past h4,ul{
+    text-align: center;
+}
+.past h4{
+    font-weight: 400;
+    font-size: 30px;
+    color: rgb(204, 186, 186);
+}
+.past ul{
+    padding: 30px 0 0 0;
+}
+li{
+    list-style-type: none;
+}
+.past 
+.arrow{
+    width: 50px;
+}
+.past img{
+    width: 25%;
+    border-radius: 2%;
+}
+.past .end{
+    width: 10%;
+}
+/* 下一页图标 */
+.downIcon{
+    position: absolute;
+    top: 95%;
+    left: calc(50% - 10px);
+    border-right: 3px solid;
+    border-top: 3px solid;
+    border-color: rgba(255,255,255,.5);
+    border-radius: 2px;
+    box-sizing: unset;
+    height: 20px;
+    width: 20px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    cursor: pointer;/* 鼠标移入效果*/
+    transition: .25s;
+    /* animation: twinkle 2s 2s; */
+}
+
+/* 尾部透明 */
+.foot{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    transition: .25s;
+}
+/* 上移到顶 */
+#gotop {
+    display: none;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+}
+#gotop img{
+    width: 50px;
+}
+
+.foot p{
+    font-size: 1.4rem;
+}
